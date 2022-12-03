@@ -1,0 +1,138 @@
+<!DOCTYPE html> <!-- 指示瀏覽器該檔案類型 -->
+<html>
+    <head>
+        <meta charset="UTF-8"></meta> <!-- 網頁編碼 -->
+        <meta name="description" content="這是一個作者用來學習HTML的檔案"/>
+        <meta name="author" content="KaiYuanee"/>
+        <meta name="keywords" content="KaiYuanee, HTML檔案"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>index.html</title>
+    </head>
+    <body>
+        <!-- 基本標籤 -->
+        <h2>第一篇文章</h2> <!-- 標題(h1~h6) -->
+        <p>今天天氣真好 <b>超爽的</b><!-- 粗體字 --> <i>好耶</i><!-- 斜體字 --></p> <!-- 內文 -->
+        <br></br> <!-- 換行 -->
+        <br/> <!-- 另一種換行方式 -->
+        <hr></hr> <!-- 水平線分隔 -->
+        <hr/> <!-- 另一種水平線分隔方式(與br相同，同樣方法亦可適用於meta等其他中間無內容之標籤) -->
+        <h2>第二篇文章</h2>
+        <p>今天天氣不好 <b><i>去你媽的</i></b><!-- 粗體&斜體(內外可對調) --></p>
+
+        <!-- 連結 & 圖片 -->
+        <a href="https://google.com">Google 網站</a>
+        <a href="https://youtu.be/dQw4w9WgXcQ">點擊此處獲取免費 iPhone 14</a> <!-- 連結至其他網站 -->
+        <a href="page2.html">第二頁</a> <!-- 連結至其他檔案 -->
+        <a href="dir/page3.html">第三頁</a> <!-- 進入其他資料夾的檔案 -->
+        <a href="maxresdefault.jpg">没有共产党就没有新中国</a> <!-- 連結至其他檔案 -->
+        <!-- 屬性寫在開始標籤後面 -->
+
+        <img src="https://hololive.hololivepro.com/wp-content/uploads/2021/04/unnamed-file-7-1000x1000.png"/> <!-- 加入外部圖片至網頁 -->
+        <img src="maxresdefault.jpg"/> <!-- 加入內部圖片至網頁 -->
+        <img src="290px-Momosuzu_Nene_-_Portrait_3D_02-1.png" width="400" height="200"/> <!-- 加入寬度、高度屬性(改變圖片大小) -->
+        <img src="290px-Momosuzu_Nene_-_Portrait_3D_02-1.png" width="400"/> <!-- 只加入寬度或高度屬性(改變圖片大小，但不改變圖片比例) -->
+
+        <!-- 影片 & 嵌入YouTube影片 -->
+        <video src="video0.mp4" controls>瀏覽器無法載入影片</video> <!-- 在網頁內加入影片(標籤內文字會在無法載入影片時顯示) -->
+        <video src="Spongebob_did_WHAT_______.mp4" controls width="1000">瀏覽器無法載入影片</video> <!-- 可改變大小(與圖片相同) -->
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/qMztUauzJFM" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe> <!-- 嵌入YouTube影片(分享-嵌入-複製程式碼) -->
+        
+        <!-- 列表 & 表格 -->
+        <ul>
+            <li>Google</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>ZeroJudge</li>
+        </ul> <!-- 無排序列表 -->
+        <ol>
+            <li>Google</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>ZeroJudge</li>
+        </ol> <!-- 有排序列表(用數字做排序) -->
+        <ol type="A">
+            <li>Google</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>ZeroJudge</li>
+        </ol> <!-- 用大寫字母做排序(a用小寫字母排序(a, b, c, d...)，i用羅馬數字小寫排序(i, ii, iii, iv...)，I用羅馬數字大寫排序) -->
+        <table width="400">
+            <tr>
+                <td>日期</td>
+                <td>2022/9/24</td>
+                <td>2022/9/25</td>
+            </tr>
+            <tr>
+                <td>星期</td>
+                <td>六</td>
+                <td>日</td>
+            </tr>
+            <tr>
+                <td>一年中的第幾天</td>
+                <td>267</td>
+                <td>268</td>
+            </tr>
+        </table> <!-- 加入表格(可改變寬度) -->
+
+        <!-- HTML的容器 div & span -->
+        <div>
+            <ol type="A">
+                <li>Google</li>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>ZeroJudge</li>
+            </ol>
+            <table width="400">
+                <tr>
+                    <td>日期</td>
+                    <td>2022/9/24</td>
+                    <td>2022/9/25</td>
+                </tr>
+                <tr>
+                    <td>星期</td>
+                    <td>六</td>
+                    <td>日</td>
+                </tr>
+                <tr>
+                    <td>一年中的第幾天</td>
+                    <td>267</td>
+                    <td>268</td>
+                </tr>
+            </table>
+        </div> <!-- 使用容器(導入CSS技術會方便許多) -->
+
+        <span>span1</span>
+        <span>span2</span> <!-- span的寬度與所佔空間相同 -->
+        <br/>
+        <div>div1</div>
+        <div>div2</div> <!-- div的所占空間固定一行，無論寬度多少 -->
+
+        <!-- HTML輸入標籤 -->
+        <input type="text" placeholder="請輸入帳號"/> <!-- 帳號輸入欄位 -->
+        <br/>
+        <br/>
+        <input type="password" placeholder="請輸入密碼"/> <!-- 密碼輸入欄位 -->
+        <br/>
+        <br/>
+        <input type="date"/> <!-- 日期輸入欄位 -->
+        <br/>
+        <br/>
+        <input type="range"/> <!-- 長條欄位 -->
+        <br/>
+        <br/>
+        <input type="file"/> <!-- 上傳檔案欄位 -->
+        <br/>
+        <br/>
+        <input type="checkbox"/> <!-- 打勾欄位 -->
+        <br/>
+        <br/>
+        <textarea>print("hello world")</textarea> <!-- 可輸入很多文字的欄位(標籤中間為預設文字) -->
+    </body>
+</html>
